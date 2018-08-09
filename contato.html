@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+  <title>Formulário de consultas </title>
+  <form mmethod="GET">
+     <label for="nome" > Nome e Sobrenome</label>
+        <input type="text" name="nome" id="nome" placeholder ="insira seu nome" required>
+
+     <label for="email" >Email</label>
+        <input type="email" id="email" placeholder="exemplo@exemplo.com" required>
+
+     <label> Gênero </label>
+       <input type="radio" name="genero" id="feminino" value="feminino" required>
+     <label for="feminino">Feminino</label>
+       <input type="radio" name="genero" id="masculino" value="masculino">
+     <label for="masculino">Masculino</label>
+     <br>
+     <label>Curso</label>
+      <input type="checkbox" name="curso[]" id="Mobile" value"Mobile"required>
+      <label for="Mobile">Mobile</label>
+    <input type="checkbox" name="curso[]" id="FullStack" value"FullStack" required>
+      <label for="FullStack">FullStack</label>
+     <br>
+    <label for="Assunto">Assunto</label>
+    <select id="Assunto" name="Assunto" required>
+      <option value""></option>
+      <option value"reclamações"> reclamações </option>
+      <option value"perguntas"> perguntas</option>
+      <option value "agradecimentos"> agradecimentos</option>
+    </select>
+    <br>
+    <label>Passatempos</label>
+    <br>
+    <input type="checkbox" name="Passatempos[]" id="andar de bicicleta" value"andar de bicicleta" required>
+    <label  for= "andar de bicicleta"> andar de bicicleta</label>
+    <br>
+    <input type="checkbox" name="Passatempos[]" id="violao" value"violao" required>
+    <label  for= "violao"> violão</label>
+    <br>
+    <input type="checkbox" name="Passatempos[]" id="musica" value"musica" required>
+    <label  for= "musica"> andar de bicicleta</label>
+    <br>
+    <input type="checkbox" name="Passatempos[]" id="correr" value"correr" required>
+    <label  for= "correr"> correr</label>
+    <br>
+    <input type="checkbox" name="Passatempos[]" id="beber" value"beber" required>
+    <label  for= "beber"> Beber </label>
+    <br>
+    <textarea name="mensagem"></textarea>
+    <br>
+   <button type=subimit>Enviar</button>
+   <button type=”reset”>Excluir</button>
+
+  </form>
+
+</body>
+
+</html>
